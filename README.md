@@ -11,7 +11,6 @@ This repository contains over **2,000 real-world n8n workflows** used in product
 ```
 n8n-workflows/
 ├── workflows/           # All exported n8n .json workflow files (2055+)
-├── tools/               # Optional scripts for managing workflows (e.g., renaming, indexing)
 ├── README.md            # This file
 ├── LICENSE              # Open-source license (MIT or your choice)
 └── .gitignore
@@ -58,32 +57,11 @@ These workflows are used to run multiple LinkedIn pages, content systems, and in
 
 ---
 
-## 🔐 Environment Variables & Credentials
-
-Some workflows reference environment variables in this format:
-
-```json
-"Authorization": "Bearer {{$env.OPENAI_API_KEY}}"
-```
-
 To run them:
 - Set environment variables in your n8n instance
 - Or manually replace with your own keys (not recommended for production)
 
 > Always secure your secrets using n8n’s built-in **credential manager**.
-
----
-
-## 🛠 Optional Tools (Scripts)
-
-Inside the `/tools/` folder:
-
-| Script                  | Description                                         |
-|-------------------------|-----------------------------------------------------|
-| `bulk-rename.py`        | Renames `.json` files in a standardized format      |
-| `readme-generator.js`   | Generates a list of workflows for index files       |
-
-You don’t need to use these — they’re just helpers if you want to automate workflow management.
 
 ---
 
@@ -117,8 +95,6 @@ Example:
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
-
 You are free to use, modify, and redistribute the workflows with or without credit — though attribution is appreciated!
 
 ---
@@ -127,9 +103,8 @@ You are free to use, modify, and redistribute the workflows with or without cred
 
 For questions, enterprise usage, or collaboration:
 
-- 👨‍💼 **Founder**: [Fahad Ali](https://github.com/fahad-ali)
-- 🧠 **Platform**: [vyrade.ai](https://vyrade.ai)
-- 📧 **Email**: fahad[at]vyrade.ai
+- 👨‍💼 **Founder**: [Fahad Ali](https://github.com/vyradeai)
+- 🧠 **Platform**: [vyrade.ai](https://www.vyrade.ai)
 
 ---
 
